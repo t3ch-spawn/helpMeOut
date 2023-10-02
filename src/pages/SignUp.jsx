@@ -17,7 +17,7 @@ export default function SignUp() {
       </div>
 
       {/* container for sign up form */}
-      <form onClick={handleForm} className="flex flex-col self-center max-w-[400px] gap-[30px]">
+      <form onClick={handleForm} className="flex flex-col self-center max-w-[400px] w-[90%] gap-[30px]">
         <h1 className="text-center font-inter text-3xl font-[700]">Log in or Sign up</h1>
         <p className="text-[#434343] text-center">
           Join millions of others in sharing successful moves on HelpMeOut.
