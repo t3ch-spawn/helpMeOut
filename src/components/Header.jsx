@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/images/logo.svg";
 import { useEffect, useState, useRef } from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isShown, setIsShown] = useState(false);
@@ -80,16 +81,20 @@ export default function Header() {
           How it works
         </a>
 
-        {/* get started button that shows only in the mobile nav*/}
-        <div className="text-white font-bold font-sora text-lg -700:block hidden">
-          Get Started
-        </div>
+        <Link to={"/signup"}>
+          {/* get started button that shows only in the mobile nav*/}
+          <div className="text-white font-bold font-sora text-lg -700:block hidden cursor-pointer">
+            Get Started
+          </div>
+        </Link>
       </nav>
 
       {/* get started button */}
-      <div className="text-mainBlue font-bold font-sora text-lg -700:hidden">
-        Get Started
-      </div>
+      <Link to={'/signup'}>
+        <div className="text-mainBlue font-bold font-sora text-lg -700:hidden cursor-pointer">
+          Get Started
+        </div>
+      </Link>
     </header>
   );
 }
