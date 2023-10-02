@@ -82,6 +82,8 @@ header {
     gap: 4px;
     cursor: pointer;
     z-index: 20;
+    position: absolute;
+    right: 40px;
   }
 
   .ham-bar {
