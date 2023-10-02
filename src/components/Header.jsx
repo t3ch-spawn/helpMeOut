@@ -39,7 +39,7 @@ export default function Header() {
   }
 
   return (
-    <header className="flex justify-between items-center bg-white sticky top-0 left-0 w-full px-16 py-4">
+    <header className="flex justify-between items-center bg-white sticky top-0 left-0 w-full px-16 -700:px-8 py-4">
       {/* container for icon */}
       <div>
         <a href="#hero">
